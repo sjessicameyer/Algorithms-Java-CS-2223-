@@ -1,0 +1,18 @@
+(1)
+The ForwardElimination algorithm fails because after the inner-most for-loop completes
+for the first time, the second row is in the form 0 0 1 3. Since the second value is
+zero, it cannot be used in the next step of solving row three. Instead, a row swap must
+be performed. However, the ForwardElimination algorithm does not have a mechanism to do
+this.
+
+The BetterForwardElimination algorithm remedies this by using partial pivoting. The
+BetterForwardElimination algorithm looks for the row with the largest absolute value
+of the coefficient in the ith column, and swaps it with the ith-row. This mechanism handles
+row swaps and minimizes round-off issues.
+
+(2)
+The BetterForwardElimination algorithm fails because the matrix has an undefined number of
+solutions. The BetterForwardElimination algorithm works only if the matrix can be solved,
+because the diagonal pattern can only be formed for solvable matrices. To remedy this flaw,
+there needs to be a check on whether the value in the pivot row at the ith column is  zero
+after performing the swap. If so, it should exit and provide an error message.

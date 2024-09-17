@@ -1,0 +1,7 @@
+PART 1
+Lucas was also known for inventing the Tower of Hanoi puzzle in 1883.
+PART 2
+These numbers look like the golden ratio, which is ~1.62. The order of growth is O(Z^n) where Z is the golden ratio.
+The "Sarah numbers" ratio still approaches 1.62, the golden ratio, and the order of growth is also O(Z^n) where Z is the golden ratio.
+PART 3
+The sum created with the greatest number of combinations is 66 with 1364 ways. This is double 33, the sum of every row/column.
